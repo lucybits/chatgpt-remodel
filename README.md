@@ -6,4 +6,4 @@ Este es un rediseño estático de la interfaz de ChatGPT, creado como una práct
 
 [![gpt-redesign.png](https://i.postimg.cc/DZ1JBQn8/gpt-redesign.png)](https://postimg.cc/dktV0y7Y)
 
-Inspirado en el bonito trabajo de [@yisienteo](https://www.behance.net/yisienteo) en Behance. 🌟  
+Basado en el bonito prototipo de [@yisienteo](https://www.behance.net/yisienteo) en Behance. 🌟  
