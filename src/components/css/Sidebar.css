@@ -1,0 +1,119 @@
+@font-face {
+  font-family: 'Chirp-Medium';
+  src: url('../assets/fonts/Chirp-Medium.ttf') format('truetype');
+}
+
+body {
+  font-family: 'Chirp-Me|dium', sans-serif;
+  background-image: linear-gradient(to bottom right, rgb(13, 39, 44), rgb(20, 11, 66), rgb(8, 5, 39));
+  margin: 0;
+  min-height: 100vh;
+  width: 100%;
+  color: white;
+}
+
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  padding: 10px;
+  color: white;
+  font-family: 'Chirp-Medium', sans-serif;
+  flex-shrink: 0; 
+}
+
+  
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 20px;
+  margin-top: 30px;
+  margin-left: 45px;
+}
+  .logo {
+    width: 120px; 
+    height: 35px;
+    margin-right: 30px;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(1000%) hue-rotate(270deg) brightness(100%) contrast(100%);
+  }
+
+.sidebar-icon {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0) invert(80%);
+  background-color: rgba(128, 128, 128, 0.1);
+  padding: 5px;
+  border-radius: 10px;
+}
+.logo-text {
+  font-size: 1.2rem;
+  font-weight: bold;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.new-chat-button {
+  width: 90%;
+  padding: 12px;
+  margin: 50px 10px 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background-color: #d559ff;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  font-family: 'Chirp-Medium', sans-serif;
+  transition: all 0.3s ease;
+}
+
+.new-chat-button:hover {
+  transform: scale(1.02);
+}
+
+.new-chat-button img {
+  width: 20px;
+  height: 20px;
+  filter: brightness(0);
+}
+
+.menu {
+  margin-left: 20px;
+  margin-top: 28px;
+  margin-bottom: 15px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin-left: 15px;
+}
+
+.menu-list li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  cursor: pointer;
+  padding: 8px 12px;
+  border-radius: 6px;
+  transition: all 0.3s ease;
+}
+
+.menu-list li:hover {
+  background-color: rgba(213, 89, 255, 0.1);
+  color: #f16fff;
+}
+
+.menu-list li:hover img {
+  filter: brightness(0) saturate(100%) invert(50%) sepia(100%) saturate(1000%) hue-rotate(270deg) brightness(100%) contrast(100%);
+}
+
+.menu-list li img {
+  width: 25px;
+  height: 25px;
+  margin-right: 20px;
+  filter: brightness(0) invert(80%);
+  transition: filter 0.3s ease;
+}

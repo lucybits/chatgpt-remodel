@@ -1,0 +1,223 @@
+  .chat-input-container {
+    flex: 0.98;
+    height: 94%;
+    font-family: 'Chirp-Medium', sans-serif;
+    background: 
+      radial-gradient(circle at 10% 10%, rgba(86, 32, 116, 0.734) 0%, transparent 50%),
+      radial-gradient(circle at 90% 20%, rgba(213, 89, 255, 0.25) 0%, transparent 45%),
+      radial-gradient(circle at 20% 80%, rgba(47, 53, 97, 0.494) 0%, transparent 55%),
+      radial-gradient(circle at 85% 85%, rgba(15, 42, 100, 0.35) 0%, transparent 50%),
+      radial-gradient(circle at 50% 50%, rgba(45, 112, 159, 0.234) 0%, transparent 60%);
+    border-radius: 10px;
+    margin-left: 10px;
+    margin-top: 20px;
+    position: relative;
+  }
+
+  .quick-access-bar {
+    height: 70px;
+    font-family: 'Chirp-Medium', sans-serif;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    background: 
+      radial-gradient(circle at 15% 15%, rgba(213, 89, 255, 0.111) 0%, transparent 40%),
+      radial-gradient(circle at 85% 25%, rgba(213, 89, 255, 0.15) 0%, transparent 35%),
+      radial-gradient(circle at 50% 50%, rgba(213, 89, 255, 0.1) 0%, transparent 50%),
+      rgba(213, 89, 255, 0.13);
+    border-radius: 10px 10px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px 0 40px;
+  }
+
+  .chat-icon {
+    width: 28px;
+    height: 28px;
+    filter: invert(90%) sepia(10%) saturate(1000%) hue-rotate(300deg) brightness(105%);
+  }
+
+  .new-chat {
+    margin-left: 20px;
+    color: #ffd5f6;
+    font-size: 21px;
+    font-family: 'Chirp-Medium', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .chat-date {
+    font-size: 14px;
+    font-family: 'Chirp-Medium', sans-serif;
+    color: #ffd5f6be;
+    margin-top: 3px;
+  }
+
+  .chat-input-box {
+    width: auto;
+    font-family: 'Chirp-Medium', sans-serif;
+    height: calc(100% - 140px);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    border-radius: 8px;
+    overflow-y: auto;
+  }
+
+  .title {
+    font-size: 28px;
+    font-family: 'Chirp-Medium', sans-serif;
+  }
+
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    width: 85%;
+    max-width: 1200px;
+    padding: 20px;
+    font-family: 'Chirp-Medium', sans-serif;
+  }
+
+  .grid-item {
+    background: rgba(17, 13, 45, 0.556);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 20px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-family: 'Chirp-Medium', sans-serif;
+    color: rgba(255, 255, 255, 0.9);
+    gap: 15px;
+  }
+
+  .example-box {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 12px;
+    border-radius: 8px;
+    width: 90%;
+    text-align: center;
+    font-size: 14px;
+    font-family: 'Chirp-Medium', sans-serif;
+    transition: background-color 0.2s ease;
+  }
+
+  .example-box:hover {
+    background: rgba(255, 255, 255, 0.1);
+  }
+
+  .edit-icon-wrapper {
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 50%;
+    transition: background-color 0.2s ease;
+  }
+
+  .edit-icon-wrapper:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .edit-icon {
+    width: 18px;
+    height: 18px;
+    filter: brightness(0) invert(1);
+  }
+
+  .action-icons {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+    margin-right: 15px;
+  }
+
+  .action-icon {
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) invert(1);
+    cursor: pointer;
+    transition: opacity 0.2s ease, background-color 0.2s ease;
+    padding: 3px;
+  }
+
+  .action-icon:hover {
+    padding: 3px;
+    opacity: 0.8;
+    background-color: rgba(128, 128, 128, 0.1);
+    border-radius: 15px;
+  }
+
+  .card-icon {
+    width: 32px;
+    height: 32px;
+    filter: brightness(0) invert(1);
+  }
+    .message-input-container {
+      position: absolute;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 70%;
+      display: flex;
+      align-items: center;
+      background: rgba(115, 113, 128, 0.226);
+      border-radius: 12px;
+      padding: 12px 20px;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+      font-family: 'Chirp-Medium', sans-serif;
+      border: 2px solid transparent;
+      transition: border-color 0.2s ease;
+    }
+
+    .message-input-container:hover {
+      border-color: rgba(213, 89, 255, 0.63);
+    }
+
+    .message-input {
+      flex: 1;
+      background: transparent;
+      border: none;
+      color: white;
+      font-size: 16px;
+      font-family: 'Chirp-Medium', sans-serif;
+      resize: none;
+      outline: none;
+      padding: 8px;
+    }
+
+    .message-input::placeholder {
+      color: rgba(255, 255, 255, 0.5);
+      font-family: 'Chirp-Medium', sans-serif;
+    }
+
+    .send-button {
+      background: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 8px;
+      border-radius: 50%;
+      font-family: 'Chirp-Medium', sans-serif;
+      transition: background-color 0.2s ease;
+    }
+
+    .send-button:hover {
+      background-color: rgba(255, 255, 255, 0.1);
+    }
+
+    .send-icon {
+      width: 24px;
+      height: 24px;
+      filter: brightness(0) invert(1);
+    }

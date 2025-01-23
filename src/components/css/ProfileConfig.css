@@ -1,0 +1,87 @@
+.profile-container {
+  margin-top: 20px;
+  display: flex;
+  align-items: flex-start; 
+  gap: 12px;
+  padding: 10px;
+  flex-wrap: wrap; 
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.profile-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-info {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.profile-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 4px;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.profile-email {
+  margin: 0;
+  font-size: 14px;
+  color: #ffffffbc;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.options-icon {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  filter: invert(70%);
+}
+
+.action-buttons {
+  display: flex;
+  gap: 4px;
+  width: 100%;
+  justify-content: center;
+  background: inherit;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.action-btn {
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: transparent;
+  border: 2px solid #d559ff;
+  border-radius: 10px;
+  color: #fff;
+  padding: 8px 20px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.2s;
+  font-family: 'Chirp-Medium', sans-serif;
+}
+
+.action-btn:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.action-btn .icon {
+  width: 16px;
+  height: 16px;
+  filter: invert(100%);
+}
